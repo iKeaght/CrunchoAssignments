@@ -8,7 +8,7 @@ function App() {
   return(
     <div>
     <Localisation/>
-    <Restaurants />
+    {/*<Restaurants />*/}
     </div>
   );
 }
