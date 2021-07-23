@@ -6,7 +6,7 @@ function Localisation() {
   const [lng, setLng] = useState(0);
   const [map, setMap] = useState(false);
 
-
+//Get the user current position (geolocalisation)
   const getLocation = () => {
       navigator.geolocation.getCurrentPosition((position) => {
         setLat(position.coords.latitude);
@@ -18,7 +18,7 @@ function Localisation() {
   useEffect(() => {
   }, [lat, lng])
 
-
+//When the button is pressed, it take the current localisation and call the component Map and Restaurants
   return (
     <div className="App">
       <h1 style={{ textDecorationLine: 'underline' }}>Click on button to show 10 restaurants near you </h1>

@@ -8,6 +8,7 @@ const Maps = ({ lat, lng }) => {
         lat: lat,
         lng: lng
     }
+    //Display a Map with the current position 
     return (
         <div  style={{
             display: "flex",

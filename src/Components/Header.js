@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar'
 import { Container } from 'react-bootstrap';
-const Header = () => {
+//Header with the Cruncho Logo and a the project Title
+const Header = () => {  
   return (
     <Navbar bg="dark" variant="dark">
       <Container>

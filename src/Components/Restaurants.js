@@ -7,7 +7,7 @@ const Restaurants = ({ lat, lng }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-
+//API Call into HERE Maps API to get the restaurants
   useEffect(() => {
     URL = `https://discover.search.hereapi.com/v1/discover?at=`+lat+`,`+lng+`&q=restaurants&limit=10&apiKey=QuDfH3QvOIE1IVlFs0rRVjFMvdKszgs13ijYYXzrOpo`
     fetch(URL)
@@ -28,6 +28,8 @@ const Restaurants = ({ lat, lng }) => {
   } else if (!isLoaded) {
     return <div>Chargement...</div>;
   } else {
+
+    //display the data from the API  in differents BootStraps Cards.
     return (
       <div className="container" style={{ padding: 40, marginBottom: 40 }}>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-start">
