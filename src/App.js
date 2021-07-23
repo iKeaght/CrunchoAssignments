@@ -1,16 +1,14 @@
-import logo from './logo.svg';
-import React, { useState } from 'react';
+
 import './App.css';
 import Localisation from './Components/Localisation'
-import Restaurants from './Components/Restaurants';
 import Header from './Components/Header';
 
 
 function App() {
-  return(
+  return (
     <div>
-    <Header />
-    <Localisation/>
+      <Header />
+      <Localisation />
     </div>
   );
 }
