@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import {ListGroup } from 'react-bootstrap/';
-import { auto } from "@popperjs/core";
+
 const Restaurants = ({ lat, lng }) => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -32,7 +32,7 @@ const Restaurants = ({ lat, lng }) => {
       <div className="container" style={{ padding: 40, marginBottom: 40 }}>
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 align-items-start">
           {items.map(item => (
-            <div className="col" style={{ height: auto, width: auto, }}>
+            <div className="col">
               <Card key={item.id} className=" border border-dark rounded" style={{ backgroundColor: '#FBE0C3', margin: 30, width: 250, }}>
                 <Card.Header as="h3" className="card-header">{item.title}</Card.Header>
                 <Card.Body>
